@@ -58,16 +58,17 @@
     <details>
         <summary>
             This is the summary of the page.
-            <p>Here's more summary.</p>
         </summary>
     </details>
     <form>
         <fieldset>
-            <label for="fname">First name:</label>
-            <input type="text">
+            <label>
+                First name: <input name="text">
+            </label>
             <br>
-            <label for="lname">Last name:</label>
-            <input type="text">
+            <label>
+                Last name: <input name="text">
+            </label>
             <br>
             <button type="button">Click Me!</button>
         </fieldset>
@@ -86,8 +87,8 @@
         <label for="datetime">check</label>
         <br>
         <label for="favs">Choose your favorite!</label>
-        <input list="favs" name="favs" id="favs">
-        <datalist id="favs">
+        <input list="favs" name="favorite" id="favs">
+        <datalist id="favorite">
             <select>
                 <option value="MyFavorite">Here!</option>
             </select>
