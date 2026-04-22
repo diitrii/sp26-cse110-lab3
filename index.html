@@ -5,15 +5,16 @@
     <title>Meeting Minutes</title>
     <meta name="Meeting Minutes" content="Meeting Info">
     <link rel="icon" href="favicon/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <main>
-        <h1>Introductory summary: First Project</h1>
+        <h1 id="head1">Introductory summary: First Project</h1>
     </main>
     <header>
-        <h2>Working with HTML</h2>
-        <h3>Check-ins: </h3>
+        <h2 id="head2">Working with HTML</h2>
+        <h3 id="head3">Check-ins: </h3>
         <p>John Doe</p>
         <p>Jane Doe</p>
     </header>
@@ -23,29 +24,29 @@
         <p><b>All</b> people must be present <strong>first day.</strong></p>
         <p><em>Make sure to decide who does what.</em></p>
         <br>
-        <p><i>What's here.</i></p>
+        <p id="here"><i>What's here.</i></p>
         <nav>
             <a href="/">home</a>
         </nav>
     </section>
-    <section>
-        <p>Important topics: </p>
-        <ol>
+    <section class="list">
+        <p id="thisclass">Important topics: </p>
+        <ol id="mylist">
             <li>First topic</li>
             <li>Second topic</li>
             <li>Third topic</li>
         </ol>
         <hr>
         <span>This page spans the whole thing.</span>
-        <ul>
+        <ul id="list">
             <li>Unordered topic</li>
             <li>Other unordered topic</li>
         </ul>
     </section>
-    <section>
+    <section id="hidden">
         <a href="https://www.google.com">google</a>
     </section>
-    <section>
+    <section id="videosec">
         <video width="320" height="240" controls>
             <source src="myvideo.mp4" type="video/mp4">
         </video>
@@ -97,6 +98,9 @@
             Sample text area.
         </textarea>
     </form>
+    <ul class="list"> ... </ul>
+    <p class="thisclass">Some text</p>
+    <div class="hidden">You won't see this</div>
 </body>
 
 </html>
