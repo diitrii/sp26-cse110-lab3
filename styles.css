@@ -15,6 +15,7 @@
     body {
         background-color: rgb(41, 122, 100);
         word-spacing: 1mm;
+        color: hsla(200, 50%, 50%, 0.8);
     }
 
     h1 {
@@ -29,13 +30,13 @@
     }
 
     #head1 {
-        line-height: 1.5pt;
+        line-height: 1.5;
         margin: 1em auto;
         display: inline-block;
     }
 
     #here {
-        border-radius: 0.5in;
+        border-radius: 8px;
         color: lightskyblue;
         display: inline;
     }
@@ -68,16 +69,34 @@
     }
 
     @media (max-width: 768px) {
-        /* tablet styles */
+        body {
+            font-size: 14px;
+        }
+
+        h2 {
+            min-width: 5rem;
+        }
     }
 
     @media (max-width: 480px) {
-        /* phone styles */
+        body {
+            font-size: 12px;
+        }
+
+        ol {
+            grid-template-columns: 1fr;
+        }
     }
 
     #videosec {
         margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
         padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
         display: block;
     }
 
@@ -113,6 +132,7 @@
 
     header>h2 {
         text-align: center;
+        color: var(--primary, blue);
     }
 
     h3~p {
@@ -134,4 +154,16 @@
     .hidden {
         display: none;
         position: relative;
+    }
+
+    a:hover {
+        color: orange;
+    }
+
+    a:active {
+        color: red;
+    }
+
+    p {
+        text-align: left;
     }
