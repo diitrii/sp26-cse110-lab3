@@ -1,33 +1,80 @@
-/*Start of CSS file*/
+/* Meeting Minutes CSS */
+
+/* Google Fonts URL */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: teal;
+    --bg: #63995b;
+}
+
 body {
-    background-color: green
+    background-color: rgb(41, 122, 100);
+    word-spacing: 1mm;
+}
+
+h1 {
+    background-color: color(srgb 0.9 0.95 0.88);
+    max-width: 75%;
+}
+
+h2 {
+    background-color: color-mix(in srgb, orange 15%, white);
+    border: 2px solid black;
+    min-width: 15rem;
 }
 
 #head1 {
-    display: inline;
-    color: #6db5a7;
-    background-color: white;
-    border-width: 1px;
-    border-style: groove;
-    text-align: center;
-}
-
-#head2 {
-    background-color: rgb(122, 41, 36);
-    border: 3cm solid black;
-    text-align: center;
-}
-
-#head3 {
-    background-color: hsla(248, 53%, 58%);
-}
-
-p {
-    margin: long;
-    word-spacing: 1em;
+    line-height: 1.5pt;
+    margin: 1em auto;
+    display: inline-block;
 }
 
 #here {
-    letter-spacing: 3rem;
-    padding: padding-top;
+    border-radius: 0.5in;
+    color: lightskyblue;
+    display: inline;
+}
+
+#mylist {
+    height: 20px;
+    width: 20px;
+    position: static;
+}
+
+ol {
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: min-content;
+    gap: 1rem;
+    grid-auto-flow: row;
+}
+
+form {
+    color: #635546;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    /* tablet styles */
+}
+
+@media (max-width: 480px) {
+    /* phone styles */
+}
+
+videosec {
+    margin: margin-bottom;
+}
+
+.list {
+    padding: 1rem;
+    margin: margin-top;
 }
