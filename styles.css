@@ -1,0 +1,33 @@
+/*Start of CSS file*/
+body {
+    background-color: green
+}
+
+#head1 {
+    display: inline;
+    color: #6db5a7;
+    background-color: white;
+    border-width: 1px;
+    border-style: groove;
+    text-align: center;
+}
+
+#head2 {
+    background-color: rgb(122, 41, 36);
+    border: 3cm solid black;
+    text-align: center;
+}
+
+#head3 {
+    background-color: hsla(248, 53%, 58%);
+}
+
+p {
+    margin: long;
+    word-spacing: 1em;
+}
+
+#here {
+    letter-spacing: 3rem;
+    padding: padding-top;
+}
